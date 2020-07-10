@@ -26,7 +26,7 @@ SECRET_KEY = 'e&t7k9i-$wrpucv6zoq*js#o1g&anl^pp-njwl$@u0#_6jl(+1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'outboxsso.herokuapp.com']
 
 SITE_ID = 1
 # Application definition
