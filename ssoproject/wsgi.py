@@ -8,12 +8,12 @@ https://docs.djangoproject.com/en/2.0/howto/deployment/wsgi/
 """
 
 import os
-from django.conf.settings import BASE_DIR
+from django.conf import settings
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 from whitenoise import WhiteNoise
-application = WhiteNoise(application, root=BASE_DIR +'/static')
-application.add_files(BASE_DIR +'/static', prefix='more-files/')
+application = WhiteNoise(application, root=settings.BASE_DIR +'/static')
+application.add_files(settings.BASE_DIR +'/static', prefix='more-files/')
 
 
 
